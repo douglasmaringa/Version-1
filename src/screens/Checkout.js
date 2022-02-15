@@ -287,7 +287,7 @@ console.log(cookies.id)
                                                     <div class="col-md-12 form-group">
                                                     <label class="form-label font-weight-bold small">{t("name")}</label>
                                                     <div class="input-group">
-                                                    <input placeholder="Name" type="text" class="form-control" value={name} onChange={(e)=>{setName(e.target.value)}}/>
+                                                    <input placeholder={t("name")} type="text" class="form-control" value={name} onChange={(e)=>{setName(e.target.value)}}/>
                                                         
                                                     </div>
                                                 </div>
@@ -295,23 +295,23 @@ console.log(cookies.id)
                                                 <div class="col-md-12 form-group">
                                                     <label class="form-label font-weight-bold small">{t("email")}</label>
                                                     <div class="input-group">
-                                                        <input placeholder="Email" type="text" class="form-control" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+                                                        <input placeholder={t("email")} type="text" class="form-control" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
                                                         
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                    <label class="form-label font-weight-bold small">{("address")}</label>
+                                                    <label class="form-label font-weight-bold small">{t("address")}</label>
                                                     <div class="input-group">
-                                                    <input placeholder="Address" type="text" class="form-control" value={address} onChange={(e)=>{setAddress(e.target.value)}}/>
+                                                    <input placeholder={t("address")} type="text" class="form-control" value={address} onChange={(e)=>{setAddress(e.target.value)}}/>
                                                         
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-12 form-group">
-                                                    <label class="form-label font-weight-bold small">{("phone")}</label>
+                                                    <label class="form-label font-weight-bold small">{t("phone")}</label>
                                                     <div class="input-group">
-                                                    <input placeholder="Contact nUMBER" type="number" class="form-control" value={phone} onChange={(e)=>{setPhone(e.target.value)}}/>
+                                                    <input placeholder={t("phone")} type="number" class="form-control" value={phone} onChange={(e)=>{setPhone(e.target.value)}}/>
                                                         
                                                     </div>
                                                 </div>
