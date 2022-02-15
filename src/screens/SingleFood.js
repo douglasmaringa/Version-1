@@ -452,7 +452,7 @@ const open=(e)=>{
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <span class="count-number float-right"><button onClick={()=>{removeFromBasket(e.id)}} type="button" class="btn-sm left dec btn btn-outline-secondary"> <i class="feather-minus"></i> </button></span>
-                                            <p class="text-gray mb-0 float-right ml-2 text-muted small">${e.price}</p>
+                                            <p class="text-gray mb-0 float-right ml-2 text-muted small">€{e.price}</p>
                                         </div>
                                     </div>
                                     
@@ -472,7 +472,7 @@ const open=(e)=>{
                             </div>
                             <div class="d-flex align-items-center">
                                 <span class="count-number float-right"><button type="button" class="btn-sm left dec btn btn-outline-secondary"> <i class="feather-minus"></i> </button><input class="count-number-input" type="text" /><button type="button" class="btn-sm right inc btn btn-outline-secondary"> <i class="feather-plus"></i> </button></span>
-                                <p class="text-gray mb-0 float-right ml-2 text-muted small">$0</p>
+                                <p class="text-gray mb-0 float-right ml-2 text-muted small">€0</p>
                             </div>
                         </div>
                         
@@ -490,7 +490,7 @@ const open=(e)=>{
                        
                     </div>
                     <div class="bg-white p-3 clearfix border-bottom">
-                        <p class="mb-1">Item Total ({basket.length})<span class="float-right text-dark"><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'$'} renderText={value => <div>{value}</div>} /></span></p>
+                        <p class="mb-1">Item Total ({basket.length})<span class="float-right text-dark"><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'€'} renderText={value => <div>{value}</div>} /></span></p>
                        
                         
                         <hr/>
@@ -500,7 +500,7 @@ const open=(e)=>{
                             </span></h6>
                     </div>
                     <div class="p-3">
-                        <button class="btn btn-success btn-block btn-lg" onClick={()=>{navigate("/checkout")}}><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'$'} renderText={value => <div>{t("proceed")} {value} <i class="feather-arrow-right"></i></div>} /></button>
+                        <button class="btn btn-success btn-block btn-lg" onClick={()=>{navigate("/checkout")}}><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'€'} renderText={value => <div>{t("proceed")} {value} <i class="feather-arrow-right"></i></div>} /></button>
                     </div>
                 </div>
             </div>
