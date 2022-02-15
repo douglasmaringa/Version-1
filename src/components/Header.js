@@ -172,8 +172,8 @@ function Header() {
                         
                            
                     </div>
-                    <button class="ml-auto mr-2" id="link"value='dl' onClick={handleOnclick}>Dutch</button>
-                    <button class="ml-2" id="link"value='en' onClick={handleOnclick}>English</button>
+                    <button class="ml-auto mr-2" id="link"value='dl' onClick={handleOnclick}>Nederlands</button>
+                    <button class="ml-2" id="link"value='en' onClick={handleOnclick}>En</button>
                    
                 </div>
             </div>
