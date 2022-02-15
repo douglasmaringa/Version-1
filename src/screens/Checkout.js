@@ -421,7 +421,7 @@ console.log(cookies.id)
                             
                         </div>
                         <div class="bg-white p-3 clearfix border-bottom">
-                        <p class="mb-1">Item Total <span class="float-right text-dark"><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'$'} renderText={value => <div>{value}</div>} /></span></p>
+                        <p class="mb-1">Item Total <span class="float-right text-dark"><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'€'} renderText={value => <div>{value}</div>} /></span></p>
                            
                         
                             <hr/>
