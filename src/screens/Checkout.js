@@ -338,7 +338,7 @@ console.log(cookies.id)
                                 <div class="osahan-card-header" id="headingThree">
                                     <h2 class="mb-0">
                                         <button class="d-flex p-3 align-items-center btn btn-link w-100" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                 <i class="feather-dollar-sign mr-3"></i> Cash on Delivery
+                                Cash on Delivery
                                  <i class="feather-chevron-down ml-auto"></i>
                                  </button>
                                     </h2>
