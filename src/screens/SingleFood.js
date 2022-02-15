@@ -496,7 +496,7 @@ const open=(e)=>{
                         <hr/>
                         <h6 class="font-weight-bold mb-0">{t("topay")} <span class="float-right">
                             
-                         ${getBasketTotal(basket)}
+                          €{getBasketTotal(basket)}
                             </span></h6>
                     </div>
                     <div class="p-3">
