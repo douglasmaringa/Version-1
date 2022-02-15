@@ -380,7 +380,7 @@ console.log(cookies.id)
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <span class="count-number float-right"><button onClick={()=>{removeFromBasket(e.id)}} type="button" class="btn-sm left dec btn btn-outline-secondary"> <i class="feather-minus"></i> </button></span>
-                                            <p class="text-gray mb-0 float-right ml-2 text-muted small">${e.price}</p>
+                                            <p class="text-gray mb-0 float-right ml-2 text-muted small">€{e.price}</p>
                                         </div>
                                     </div>
                                     
@@ -400,7 +400,7 @@ console.log(cookies.id)
                             </div>
                             <div class="d-flex align-items-center">
                                 <span class="count-number float-right"><button type="button" class="btn-sm left dec btn btn-outline-secondary"> <i class="feather-minus"></i> </button><input class="count-number-input" type="text" /><button type="button" class="btn-sm right inc btn btn-outline-secondary"> <i class="feather-plus"></i> </button></span>
-                                <p class="text-gray mb-0 float-right ml-2 text-muted small">$0</p>
+                                <p class="text-gray mb-0 float-right ml-2 text-muted small">€0</p>
                             </div>
                         </div>
                         
@@ -426,11 +426,11 @@ console.log(cookies.id)
                         
                             <hr/>
                         <h6 class="font-weight-bold mb-0">{t("pay")} <span class="float-right">
-                        <CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'$'} renderText={value => <div>{value}</div>} />
+                        <CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'€'} renderText={value => <div>{value}</div>} />
                             </span></h6>
                         </div>
                         <div class="p-3">
-                        <button class="btn btn-success btn-block btn-lg" disabled={!stripe} onClick={()=>{handleSubmit("douglas")}}><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'$'} renderText={value => <div>{t("pay")} {value} <i class="feather-arrow-right"></i></div>} /></button>
+                        <button class="btn btn-success btn-block btn-lg" disabled={!stripe} onClick={()=>{handleSubmit("douglas")}}><CurrencyFormat value={getBasketTotal(basket)} displayType={'text'} thousandSeparator={true} prefix={'€'} renderText={value => <div>{t("pay")} {value} <i class="feather-arrow-right"></i></div>} /></button>
                     </div>
                     </div>
                 </div>
