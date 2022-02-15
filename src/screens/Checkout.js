@@ -97,7 +97,7 @@ function Checkout() {
             name: name,
           },
         },
-        return_url: 'http://localhost:3000/',
+        return_url: 'https://elated-bassi-de92e3.netlify.app/',
       });
   
       if (error) {
@@ -113,7 +113,7 @@ function Checkout() {
                 name: data[0].name,
               },
             },
-            return_url: 'http://localhost:3000/',
+            return_url: 'https://elated-bassi-de92e3.netlify.app/',
           });
       
           if (error) {
